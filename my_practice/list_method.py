@@ -4,12 +4,16 @@ name.extend(marks)
 name.insert(2,"litchi")
 print(name)
 
+
+
 # print(name[0:7:2])
 # print(name[::-1])
 # name[0]="bhumi"
 # name.append("adii")
 # name.remove(133)
 # print(name)
+
+
 
 # swaping number
 a=12
