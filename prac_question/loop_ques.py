@@ -62,6 +62,7 @@ while i<=num:
     i+=1
 print(product)
 
+
                                     # check whether a no. is prime or not
 # is_prime= True
 # for i in range(2,int(num**0.5)+1):
