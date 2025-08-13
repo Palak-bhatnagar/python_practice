@@ -35,6 +35,10 @@ dup_remove(list1)
 
 
 
+
+
+
+
                    # Write a program to remove all negative numbers from a list using a loop and remove().
 
 neg=[2,1,-3,4,-5,5,2,-4,6,8,-9]

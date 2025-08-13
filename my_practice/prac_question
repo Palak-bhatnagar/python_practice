@@ -20,15 +20,15 @@
 
 
                                    # Write a function that removes all duplicate elements from a list without using set().
-list1=[1,3,2,4,5,4,2]
-def dup_remove(x):
-        new=[]
-        for ele in list1:
-                if ele not in new:
-                        new.append(ele)
-        print(new)              
+# list1=[1,3,2,4,5,4,2]
+# def dup_remove(x):
+#         new=[]
+#         for ele in list1:
+#                 if ele not in new:
+#                         new.append(ele)
+#         print(new)              
     
-dup_remove(list1)
+# dup_remove(list1)
 
                     # Given a list of dictionaries, remove all dictionaries where 'status' is 'inactive'.    
 
