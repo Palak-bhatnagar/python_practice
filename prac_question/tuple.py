@@ -52,9 +52,12 @@ print(tup3)
 
     # Count a Value in Tuple - Scenario: You want to count how many times a product appears in the inventory.
 num=(1,2,4,3,5,2,3,4,5,6)
+e=[]
 for i in num:
-    a=num.count(i)
-    print(f"{i} : {a}")
+    if i not in e:
+        e.append(i)
+        a=num.count(i)
+        print(f"{i} : {a}")
 
      # Scenario: You want to get the last value of a tuple. - How do you use negative indexing with a tuple?
 
@@ -82,16 +85,20 @@ r=zip(name,scores)
 print(list(r))
 print(type(r))
 
-           # You want to ensure all settings in a tuple are the same value. How do you check if all items in a tuple are equal?
+             # You want to ensure all settings in a tuple are the same value. How do you check if all items in a tuple are equal?
 same=(5,5,5,5,5,5)
-for i in same:
-    for y in range(len(same)):
-        if i==same[y]:
-            print("all items are same: ")
+all_equal=True
+if same:
+    fst_ele=same[0]
+    for i in same:
+        if i!=fst_ele:
+            all_equal=False
             break
-    # print("all items are same")
         else:
-            print("all items are not same ")
+            all_equal = True 
+
+    print(all_equal)
+
 
 # You want to know which day had the lowest and highest temperature. How do you get the index of the min/max element in a tuple?
 
@@ -105,6 +112,20 @@ print("index of highest temperatur: ",max_temp)
 
 sq=tuple(x**2 for x in range(5))
 print(sq)
+
+                                        # Tuple in Function Return
+# Scenario: You want to return both total and average marks from a function. How can you return multiple values using a tuple?
+
+def calculate(marks):
+    total=sum(marks)
+    average=total/len(marks)
+    return total,average
+
+marks_list=[12,45,6,3,74,96]
+total,average=(calculate(marks_list))
+print(f"total: {total}")
+print(f"average: {average}")
+
 
 
 
