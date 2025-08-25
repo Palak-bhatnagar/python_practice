@@ -9,7 +9,8 @@ student={
         "akshara":"hindi"
     },
 }
-
+student["book"]="jiya"
+print(student)
 print(student["roll_no"])
     # a=student["teachers"]
     # print(a[1])

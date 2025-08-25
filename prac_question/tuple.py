@@ -127,7 +127,7 @@ print(f"total: {total}")
 print(f"average: {average}")
 
 
-
+# You want to use (x, y) coordinates as keys in a game map. Why can tuples be used as dictionary keys but lists can’t?
 
 
 

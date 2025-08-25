@@ -48,19 +48,19 @@
 
 
                                     # factotrial of a number:
-num=int(input("enter nummber: "))
+# num=int(input("enter nummber: "))
 # product=1
 # for i in range(1,num+1):
 #     product *= i
 #     print(product)
 
                           # using while loop
-product=1
-i=1
-while i<=num:
-    product *= i
-    i+=1
-print(product)
+# product=1
+# i=1
+# while i<=num:
+#     product *= i
+#     i+=1
+# print(product)
 
 
                                     # check whether a no. is prime or not
@@ -93,7 +93,15 @@ print(product)
 #         break
 
 
+                        # . Loop over a dictionary and print key-value pairs using a for loop.
+student={
+    "name":"palak",
+    "roll_no": "23",
+    "address": "meerut"
+}
 
+for n,i in student.items():
+    print(f"{n}-{i}")
 
 
 
